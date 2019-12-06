@@ -1,0 +1,156 @@
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.customButton{
+  font-size : 20px
+}
+.label{
+  color : #14ADED;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+.slogan {
+  display : flex ;
+  justify-content : center ; 
+  color :#14ADED;
+  text-align : 'center';
+  /* margin-top : 5%; */
+  font-weight : bold;
+  font-size : 30px
+}
+              .loginHeading{
+                font-size : 25px
+              }
+              .link{
+                color :#14ADED;
+                font-size : 15px;
+                
+                display : flex ;
+  justify-content : center ; 
+
+              }
+ .mainContainerManage{
+   border-bottom: blue 1px solid;
+   margin-bottom: 2px;
+   padding: 12px;
+   padding-top: 22px;
+  }
+  .input : {
+  border : 1px  blue solid;
+  border-radius : 5px;
+}
+.input ::placeholder {
+  color: '#14ADED';
+  border: 1px #14ADED solid;
+}
+.tagsDiv{
+  height:  100px;
+  width: 220px;
+  border: #14ADED 1px solid
+}
+.bigTagsDiv{
+  height:  120px;
+  width: '100%';
+  border: #14ADED 1px solid
+}
+.tagsHeading{
+  color: blue;
+  margin-left: 3px;
+  font-size: 18px;
+}
+.tag{
+  height:  18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tagClass{
+  margin: 3px;
+  border: #14ADED 1px solid;
+  padding: 2px;
+  padding-left: 3px;
+  padding-right: 4px;
+}
+.orderTitle {
+  border : 1px solid #14ADED;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 6px
+}
+.orderDesc{
+  color: #14ADED;
+  font-size: 14px;
+}
+.tags{
+  font-size: 12px
+}
+.tagValue{
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 3px;
+  border: #14ADED 1px solid;
+}
+.paymentRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.paymentTotal{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width : 100%;
+  margin : 0;
+  height: 55px;
+  margin-top : 5px;
+  padding-right: 10%;
+  background-color : #2799FA;
+}
+
+.payment-div{
+  height : 300px; 
+  background-color : #fff;
+  border : 1px black solid ;
+  padding:  12 ;
+  width : 50%;
+  display : flex;
+  align-items : 'center'
+}
+.paymentTotal span{
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  margin-right : 20PX;
+}
+.paymentRow span {
+  font-size: 20px;
+  color: #14ADED;
+  font-weight: 500;
+  margin : 6px;
+}
+.App-link {
+  color: #09d3ac;
+}
