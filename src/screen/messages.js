@@ -19,8 +19,8 @@ function Messages() {
             align = {"middle"} style = {{height : 70 , borderBottom : "1px solid skyblue", 
             cursor : "pointer"}}>
             <Col span = {4}>
-                <div style={{ width: 45,  height: 45,  display : "flex" , justifyContent :"center",  alignItems: 'center',
-                 backgroundColor: '#2899fa'  , borderRadius : 2}}>
+                <div style={{ width: 45,  height: 45,  display : "flex" , justifyContent :"center", 
+                 alignItems: 'center', backgroundColor: '#2899fa'  , borderRadius : 2}}>
                     <FaUserAlt style={{ color: '#FFFFFF', fontSize: 20}} />
                 </div>
             </Col>

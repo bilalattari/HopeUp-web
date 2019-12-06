@@ -48,7 +48,7 @@ function Container(props) {
           <Sider breakpoint = {'md'}  style = {{backgroundColor : 'blue'}} width = {"160"}>
               <div>
                     <div style={{ ...styles.sidebarIconDiv, paddingTop: 20 }}>
-                         <FaYoutube style={styles.sidebarIcons} />
+                    <Link to = {"/videos"}>    <FaYoutube style={styles.sidebarIcons} /> </Link>
                      </div>
                      <div style={styles.sidebarIconDiv}>
                          <FaRegHandshake style={styles.sidebarIcons} />

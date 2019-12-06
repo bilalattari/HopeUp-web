@@ -24,7 +24,9 @@ import Orders from './screen/Orders';
 import Favourites from './screen/Favourites';
 import Checkout from './screen/Checkout';
 import Buy from './screen/Buy';
-
+import VideoDetail from './screen/VideoDetail';
+import Terms from './screen/Terms'
+import UploadItem from './screen/UploadItem'
 const history = createBrowserHistory()
 
 function App() {
@@ -32,59 +34,27 @@ function App() {
     <div style={{ width: '100%', height: '49vw' }}>
             <Router history={history}>
       <Switch>
-      <Route  exact path="/" >
-            <Landing />
-          </Route>
-          <Route exact path="/changePicture">
-            <ChangePicture />
-          </Route>
-          <Route exact path="/forgetPassword">
-            <ForgetPassword />
-          </Route>
-          <Route exact path="/repostClssified">
-            <RepostClssified />
-          </Route>
-          <Route exact path="/orders">
-            <Orders />
-          </Route>
-          <Route exact path="/checkout">
-            <Checkout />
-          </Route>
-          <Route exact path="/favourites">
-            <Favourites />
-          </Route>
-          <Route exact path="/buy">
-            <Buy />
-          </Route>
-          
-          <Route exact path="/home">
-            <Home />
-          </Route>
-          <Route exact path="/login">
-            <Login/>
-          </Route>
-          <Route exact path="/manageProducts">
-            <ManageProducts/>
-          </Route>
-          <Route exact path="/manageClassified">
-            <ManageClassified/>
-          </Route>
-          
-          <Route exact path="/createaccount">
-            <SignUp />
-          </Route>
-          <Route exact path="/intro">
-            <Intro />
-          </Route>
-          <Route exact path="/notification">
-            <Notification />
-          </Route>
-          <Route exact path="/manageVideos">
-            <ManageVideos />
-          </Route>
-          <Route exact path="/messages">
-            <Messages />
-          </Route>
+          <Route  exact path="/" ><Landing /> </Route>
+          <Route exact path="/changePicture">  <ChangePicture />   </Route>
+          <Route exact path="/terms">  <Terms />   </Route>
+          <Route exact path="/videos">  <Videos />   </Route>
+          <Route exact path="/forgetPassword">  <ForgetPassword />   </Route>
+          <Route exact path="/repostClssified">  <RepostClssified />   </Route>
+          <Route exact path="/upload">  <UploadItem />   </Route>
+          <Route exact path="/videoDetail">  <VideoDetail />   </Route>
+          <Route exact path="/orders">  <Orders />   </Route>
+          <Route exact path="/checkout">  <Checkout />   </Route>
+          <Route exact path="/favourites">  <Favourites />   </Route>
+          <Route exact path="/buy">  <Buy />   </Route>
+          <Route exact path="/home">  <Home />   </Route>
+          <Route exact path="/login">  <Login/>   </Route>
+          <Route exact path="/manageProducts">  <ManageProducts/>   </Route>
+          <Route exact path="/manageClassified">  <ManageClassified/>   </Route>
+          <Route exact path="/createaccount">  <SignUp />   </Route>
+          <Route exact path="/intro">  <Intro />   </Route>
+          <Route exact path="/notification">  <Notification />   </Route>
+          <Route exact path="/manageVideos">  <ManageVideos />   </Route>
+          <Route exact path="/messages">  <Messages />   </Route>
         </Switch>
         </Router>
     </div>

@@ -1,48 +1,54 @@
 import React from 'react';
 import Container from '../container';
+import 'antd/dist/antd.css';
+import Button from '../Components/Buttons'
+import { themeColor } from '../Constant';
+import {Link} from 'react-router-dom'
+import {  FaFlag   ,FaHeart , FaUserAlt } from "react-icons/fa";
+import {FiPlayCircle} from "react-icons/fi"
+import {  IoIosClose} from "react-icons/io";
+import { Input, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader , Checkbox } from 'antd';
+import Header from '../Components/Header'
+const { Search } = Input;
 
 function Videos() {
     const videoData = () => {
         return (
-            <div style={{ paddingTop: 40, paddingBottom: 40, width: '100%', height: 140, borderBottom: '2px solid #2899fa', backgroundColor: '#f1f8ff' }}>
-                <div style={{ width: '25%', paddingRight: '2%', float: 'left' }}>
-                    <video src="https://youtu.be/UdMecqvWfkM" width="100%" height="130" controls>
-                    </video>
+            <Link to = {'/videoDetail'}>
+            <div style = {{margin : 12 , }}>
+                <div className = {"videodiv"}>
+                    <FiPlayCircle color = {"#fff"}  fontSize = {41} />
                 </div>
-                <div style={{ width: '70%', height: 140, float: 'left' }}>
-                    <div style={{ width: '80%', float: 'left', height: 140 }}>
-                        <div style={{ height: 30, fontSize: 18, paddingTop: 5, color: '#2899fa' }}>
-                            Video Title
-                            </div>
-                        <div style={{ width: '100%', display: 'flex', flexWrap: 'wrap', lineHeight: 1.7, color: '#2899fa' }}>
-                            Loren Epsem jems |Loren Epsem jems |Loren Epsem jems |Loren Epsem jems
-                            Loren Epsem jems |Loren Epsem jems |Loren Epsem jems |Loren Epsem jems
-                            Loren Epsem jems |Loren Epsem jems |Loren Epsem jems
-                            </div>
+                <div className = {"flagDiv"}>
+                    <span className = {"title"}>VIDEO TITLE</span>
+                    <div style = {{display : "flex"}}>
+                        <FaFlag   fontSize = {13} color ={"blue"} style = {{marginRight : 12}} />
+                        <FaHeart   fontSize = {13} color ={"blue"} style = {{marginRight : 12}} />
                     </div>
-                    <div style={{ width: '20%', height: 140, textAlign: 'center', float: 'left' }}>
-                        <button style={{ margin: '50px auto', width: 90, height: 30, color: '#FFFFFF', border: '2px solid #2899fa', fontSize: 12, backgroundColor: '#2899fa', borderRadius: 2, cursor: 'pointer' }}>
-                            DELETE
-                        </button>
-                    </div>
+                 </div>
+                 <div className = {'usernameDiv'}> 
+                 <div className = {'userIcon'}>
+                    <FaUserAlt style={{ color: '#FFFFFF', fontSize: 20}} />
                 </div>
-            </div>
+                <span style = {{color : '#2799FA' , marginLeft : 12}}>Username</span>
+                 </div>
+                </div>
+            </Link>
         )
+    }
+    const styles = {
+        mainHeading : { paddingTop: 25, width: '100%', textAlign: 'start',
+        paddingLeft: 25, color: '#2899fa', fontSize: 22, fontWeight : 'bold'},
     }
     return (
         <Container>
-            <div style={{ height: '100%', width: '95%' }}>
-                <div style={{ paddingTop: 25, width: '100%', textAlign: 'start', paddingLeft: 50, color: '#2899fa', fontSize: 22, backgroundColor: '#f1f8ff' }}>
-                    MANAGE VIDEOS
+            <Header title = {"VIDEOS"} />
+            <div style = {{display : "flex" , justifyContent : "center" , 
+            margin : 12 , flexWrap : "wrap" }}>
+                {
+                    ['1' , '2' , '3', '4', '5' , '6' ].map((data)=> videoData())
+                }
                 </div>
-                <div style={{ overflowY: 'scroll', paddingLeft: 50, width: '100%', height: '88%' }}>
-                    {videoData()}
-                    {videoData()}
-                    {videoData()}
-                    {videoData()}
-                    {videoData()}
-                </div>
-            </div>
         </Container>
     );
 }

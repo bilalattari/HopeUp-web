@@ -72,7 +72,7 @@ class Home extends Component {
                   <Col  md = {2}>
                 <AiOutlineFile color = {themeColor} fontSize = {25}  style = {{marginTop : 4}} />
                   </Col>
-                  <Col md = {8}>
+                  <Col md = {10}>
                 <span style = {{color : themeColor , textAlign : 'center' ,
                 fontSize : 18}}>Manage Classifieds</span>
                   </Col>
@@ -100,7 +100,7 @@ class Home extends Component {
                   </Col>
               </Row>
                </Link> 
-              <Link to = {"/manageVideos"}>
+              <Link to = {"/terms"}>
               <Row gutter={12} type="flex" justify="center" style  = {{margin  : 5 , }} >
                   <Col  md = {2} style = {{marginLeft : 41}}>
                 <AiOutlineProfile color = {themeColor} fontSize = {25}  style = {{marginTop : 4}} />

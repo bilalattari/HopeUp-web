@@ -129,7 +129,11 @@
   padding-right: 10%;
   background-color : #2799FA;
 }
-
+.headerTitle{
+  font-size: 20px;
+  font-weight: bold;
+  color: #2799FA;
+}
 .payment-div{
   height : 300px; 
   background-color : #fff;
@@ -153,4 +157,57 @@
 }
 .App-link {
   color: #09d3ac;
+}
+.videodiv{
+  height : 140px;
+  width : 320px;
+  background-color : skyblue;
+  display : flex ;
+  justify-content : center;
+  align-items : center;
+}
+.flagDiv{
+  height : 30px;
+  background-color : #fff;
+  display : flex;
+  align-items : center;
+  justify-content : space-between
+}
+.title {
+  font-size : 13px;
+  font-weight : bold;
+  color : blue;
+  margin-left : 12px
+}
+.usernameDiv{
+  min-height : 50px ;
+  background-color : skyblue ;
+  display : flex;
+  align-items : center
+}
+.userIcon{
+  width: 40px;
+  height: 40px;
+  display : flex;  
+  justify-content : center ;
+  align-items: center;
+  background-color:  #2899fa;
+  border-radius: 5px;
+  margin-left: 6px
+}
+.commentsHeading{
+  height: 40px;
+  font-size : 14px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  font-weight : bold;
+  color : #2799FA;
+  padding-left : 12px
+}
+.commentDiv{
+  border: none;
+  border-top: 1px solid #2799FA;
+  border-bottom: 1px solid #2799FA;
+  padding: 12px;
 }
