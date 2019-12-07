@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 import Button from '../Components/Buttons'
 import { themeColor } from '../Constant';
 import {  FaFlag   ,FaHeart , FaPlusCircle } from "react-icons/fa";
-import {FiPlayCircle ,} from "react-icons/fi"
+import {AiFillPlusCircle ,} from "react-icons/ai"
 import {  IoIosClose} from "react-icons/io";
 import { Input, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader , Checkbox } from 'antd';
 import Header from '../Components/Header'
@@ -18,8 +18,7 @@ function UploadItem() {
     return (
         <Container>
             <Header title = {"VIDEOS"} />
-            <div style = {{display : "flex" , justifyContent : "center" , 
-            margin : 12 , flexWrap : "wrap" }}>
+            <div style = {{display : "flex" , justifyContent : "center" ,  flexWrap : "wrap" }}>
                 </div>
                 <div style = {{padding : 15 , backgroundColor : "#fff"}}>
                     <span style = {{fontSize : 22}} className = {"slogan"}>Uploaded videos should upbuild,</span>
@@ -29,7 +28,7 @@ function UploadItem() {
                 <Row gutter = {24} type = {'flex'} justify = 'center'  style = {{margin : 8 }} >
                  <Col lg = {12} style = {{ height : '80vh' , padding : 12}}>
                  <div className = {"videodiv"} style = {{width : '80%' , height : '45%'}}>
-                    <FaPlusCircle color = {'blue'}  fontSize = {50} />
+                    <AiFillPlusCircle color = {'blue'}  fontSize = {50} />
                 </div>
                 </Col>
                 <Col lg = {10} style = {{ height : '80vh' , backgroundColor : "#fff"}}>

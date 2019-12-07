@@ -177,7 +177,7 @@
 .title {
   font-size : 13px;
   font-weight : bold;
-  color : blue;
+  color : #2799FA;
   margin-left : 12px
 }
 .usernameDiv{
@@ -211,4 +211,10 @@
   border-top: 1px solid #2799FA;
   border-bottom: 1px solid #2799FA;
   padding: 12px;
+}
+.iconRow{
+  display: flex;
+  align-items: center;
+  height: 55px;
+  padding: 6px;
 }

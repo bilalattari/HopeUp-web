@@ -31,6 +31,11 @@ import Store from './screen/Store';
 import StoreDetail from './screen/StoreDetail';
 import AddStore from './screen/AddStore';
 import Classifieds from './screen/Classifieds';
+import AllClassifieds from './screen/ClassifiedsAdds';
+import ClassifiedDetail from './screen/ClassifiedDetail';
+import CreateAdd from './screen/Createadd';
+import ADPayment from './screen/ADpayment'
+import AdPosted from './screen/AdPosted';
 const history = createBrowserHistory()
 
 function App() {
@@ -44,7 +49,12 @@ function App() {
           <Route exact path="/videos">  <Videos />   </Route>
           <Route exact path="/store">  <Store />   </Route>
           <Route exact path="/storeDetail">  <StoreDetail />   </Route>
+          <Route exact path="/classifiedDetails">  <ClassifiedDetail />   </Route>
+          <Route exact path="/createadd">  <CreateAdd />   </Route>
+          <Route exact path="/adpayment">  <ADPayment/>   </Route>
+          <Route exact path="/adds">  <AllClassifieds />   </Route>
           <Route exact path="/classifieds">  <Classifieds />   </Route>
+          <Route exact path="/adposted">  <AdPosted />   </Route>
           <Route exact path="/addproduct">  <AddStore />   </Route>
           <Route exact path="/forgetPassword">  <ForgetPassword />   </Route>
           <Route exact path="/repostClssified">  <RepostClssified />   </Route>

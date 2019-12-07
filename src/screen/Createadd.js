@@ -3,25 +3,24 @@ import Container from '../container';
 import 'antd/dist/antd.css';
 import Button from '../Components/Buttons'
 import { themeColor } from '../Constant';
-import {  FaFlag   ,FaHeart , FaPlusCircle } from "react-icons/fa";
 import {AiFillPlusCircle ,} from "react-icons/ai"
 import {  IoIosClose} from "react-icons/io";
-import { Input, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader , Checkbox } from 'antd';
-import Header from '../Components/Header'
+import { Input, Col, Row,} from 'antd';
+import {Link} from 'react-router-dom'
 const {  TextArea } = Input;
  
-function AddStore() {
+function CreateAdd() {
     const styles = {
         mainHeading : { paddingTop: 25, width: '100%', textAlign: 'start',
         paddingLeft: 25, color: '#2899fa', fontSize: 22, fontWeight : 'bold'},
     }
     return (
         <Container>
-            <div style = {{display : "flex" , justifyContent : "center" ,}}>
+            <div style = {{display : "flex" , justifyContent : "center" ,  flexWrap : "wrap" }}>
                 </div>
                 <div style = {{padding : 15 , backgroundColor : "#fff"}}>
-                    <span style = {{fontSize : 22}} className = {"slogan"}>BECOME A SELLER</span>
-                    <span style = {{fontSize : 22}} className = {"slogan"}>ON HOPEUP</span>
+                    <span style = {{fontSize : 22}} className = {"slogan"}>CREATE</span>
+                    <span style = {{fontSize : 22}} className = {"slogan"}>CLASSIFIED ADS</span>
                     </div>
 
                 <Row gutter = {24} type = {'flex'} justify = 'center'   >
@@ -65,7 +64,9 @@ function AddStore() {
                         <Row gutter = {24} type = {'flex'} justify = 'center'
                          style = {{margin : 8 , marginTop : 6 }}>
                             <Button title = {"CANCEL"} />
-                            <Button title = {"POST"} />
+                            <Link to = {"/adpayment"}> 
+                            <Button title = {"NEXT"} />
+                            </Link>
                         </Row>
                 </Col>
                 </Row>
@@ -73,4 +74,4 @@ function AddStore() {
     );
 }
 
-export default AddStore;
+export default CreateAdd;
