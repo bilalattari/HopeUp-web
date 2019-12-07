@@ -27,6 +27,10 @@ import Buy from './screen/Buy';
 import VideoDetail from './screen/VideoDetail';
 import Terms from './screen/Terms'
 import UploadItem from './screen/UploadItem'
+import Store from './screen/Store';
+import StoreDetail from './screen/StoreDetail';
+import AddStore from './screen/AddStore';
+import Classifieds from './screen/Classifieds';
 const history = createBrowserHistory()
 
 function App() {
@@ -38,6 +42,10 @@ function App() {
           <Route exact path="/changePicture">  <ChangePicture />   </Route>
           <Route exact path="/terms">  <Terms />   </Route>
           <Route exact path="/videos">  <Videos />   </Route>
+          <Route exact path="/store">  <Store />   </Route>
+          <Route exact path="/storeDetail">  <StoreDetail />   </Route>
+          <Route exact path="/classifieds">  <Classifieds />   </Route>
+          <Route exact path="/addproduct">  <AddStore />   </Route>
           <Route exact path="/forgetPassword">  <ForgetPassword />   </Route>
           <Route exact path="/repostClssified">  <RepostClssified />   </Route>
           <Route exact path="/upload">  <UploadItem />   </Route>

@@ -51,10 +51,10 @@ function Container(props) {
                     <Link to = {"/videos"}>    <FaYoutube style={styles.sidebarIcons} /> </Link>
                      </div>
                      <div style={styles.sidebarIconDiv}>
-                         <FaRegHandshake style={styles.sidebarIcons} />
+                      <Link to = {"/store"}>   <FaRegHandshake style={styles.sidebarIcons} /> </Link>
                      </div>
                      <div style={styles.sidebarIconDiv}>
-                         <FaRegListAlt style={styles.sidebarIcons} />
+                       <Link to = {'/classifieds'}>  <FaRegListAlt style={styles.sidebarIcons} /> </Link>
                      </div>
                      <div style={styles.sidebarIconDiv}>
                          <FaHome style={styles.sidebarIcons} />

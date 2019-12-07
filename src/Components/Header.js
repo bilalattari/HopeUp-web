@@ -20,7 +20,7 @@ function Header(props) {
                   />
                 </Col>
                 <Col md = {6}>
-                    <Link to = {"/upload"}>
+                    <Link to = {props.store ? "/addproduct" : "/upload"}>
                     <FaPlusCircle  fontSize  = {36} color = {"#2799FA"}  style = {{marginLeft : "30%"}} />
                     </Link>
                 </Col>

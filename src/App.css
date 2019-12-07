@@ -68,6 +68,8 @@
 .bigTagsDiv{
   height:  120px;
   width: '100%';
+  padding: 6px;
+  margin-top: 2px;
   border: #14ADED 1px solid
 }
 .tagsHeading{
@@ -160,8 +162,7 @@
 }
 .videodiv{
   height : 140px;
-  width : 320px;
-  background-color : skyblue;
+  background-color : lightblue;
   display : flex ;
   justify-content : center;
   align-items : center;
