@@ -41,7 +41,10 @@ render () {
                     </div>
                     <div style = {{margin : 41}}>
             <Row gutter = {24} type = {'flex'} justify = {'center'}    >
-                <Col lg = {22} style = {{backgroundColor : "#fff" , height : '70vh' , paddingTop : 51}}>
+                <Col lg = {22} style = {{backgroundColor : "#fff" , height : '80vh' , paddingTop : 51}}>
+                <Row gutter={24}  type="flex" justify = {"center"} >
+                <span style = {{fontSize : '41px' , fontWeight : 'bold' , color : themeColor  , margin: '11px',}}>$5.00</span>
+            </Row>
                 <Row gutter={24} type="flex" justify="center">
                     <Col md= {10}>
             <Col span={18}>

@@ -40,11 +40,14 @@ render () {
             <div style={styles.mainHeading}>
                     FAVOURITES
             </div>
+            <LineHeading title = {"VIDEO"} />
+            <ItemDetail video = {true}/>
+            <ItemDetail video = {true}/>
             <LineHeading title = {"STORE"} />
-            <ItemDetail />
-            <ItemDetail />
+            <ItemDetail store = {true} />
+            <ItemDetail store = {true} />
             <LineHeading title = {"CLASSIFIEDS"} />
-            <ItemDetail />
+            <ItemDetail classified = {true} />
             </div>
         </Container>
     );

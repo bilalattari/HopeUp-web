@@ -24,7 +24,6 @@ function AllClassifieds() {
                     <div style = {{display : "flex"}}>
                         <FaFlag   fontSize = {13} color ={"blue"} style = {{marginRight : 12}} />
                         <FaHeart   fontSize = {13} color ={"blue"} style = {{marginRight : 12}} />
-                        <FaShoppingBag   fontSize = {13} color ={"blue"} style = {{marginRight : 12}} />
                         <FaEnvelope   fontSize = {13} color ={"blue"} style = {{marginRight : 12}} />
                     </div>
                  </div>
@@ -48,7 +47,7 @@ function AllClassifieds() {
     }
     return (
         <Container>
-            <Header title = {"CLASSIFIEDS"} />
+            <Header title = {"CLASSIFIEDS"} add  = {true} />
             <div style = {{display : "flex" , justifyContent : "center" , 
             margin : 12 , flexWrap : "wrap" }}>
                 {

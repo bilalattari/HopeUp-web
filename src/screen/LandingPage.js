@@ -8,7 +8,7 @@ import Buttons from '../Components/Buttons'
 import {themeColor} from '../Constant/index'
 function Landing() {
     return (
-        <Container leftbar = {true}>
+        <Container leftbar = {true} icons = {true}>
         <div style={{display : 'flex' , justifyContent : 'center'}}>
             <BesideLogo />
         </div>
@@ -16,7 +16,7 @@ function Landing() {
             <span className = {'slogan'}> To Choose </span>
 
             <div style={{display : 'flex' , justifyContent : 'center' , marginTop : '3%'}}>
-           <Link to = {'/changePicture'}> <Buttons title = {'LOGIN'} /></Link>
+           <Link to = {'/login'}> <Buttons title = {'LOGIN'} /></Link>
            <Link to = {'/createaccount'}> <Buttons title = {'SIGN UP'} /></Link>
         </div>
         </Container>

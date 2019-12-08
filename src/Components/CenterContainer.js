@@ -3,8 +3,7 @@ import { FaHeart, FaMailBulk, FaBell, FaYoutube, FaHome, FaRegHandshake, FaRegLi
 
 function CenterContainer(props) {
     return(
-        <div style={{ height: '90%', width: '50%', margin: '2.5% auto',
-         border: '2px solid #a7acaf' , backgroundColor : '#fff' , padding : 12 }}>
+        <div className = {'centerContainer'} style={{ }}>
             {props.children}
         </div>
     )

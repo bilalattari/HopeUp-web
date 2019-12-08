@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../container';
 import 'antd/dist/antd.css';
 import Button from '../Components/Buttons'
-import { Input, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader , } from 'antd';
+import { Input, Col, Row,  } from 'antd';
 function ManageVideos() {
     const videoData = () => {
         return (

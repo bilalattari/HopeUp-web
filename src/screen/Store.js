@@ -14,7 +14,7 @@ const { Search } = Input;
 function Store() {
     const videoData = () => {
         return (
-            <Link to = {'/storeDetail'} store  = {true}>
+            <Link to = {'/storeDetail'} >
             <div style = {{margin : 12 , width  : "320px"}}>
                 <div className = {"videodiv"}>
                     <FaShoppingBag color = {"#fff"}  fontSize = {41} />
@@ -48,7 +48,7 @@ function Store() {
     }
     return (
         <Container>
-            <Header title = {"STORE"} />
+            <Header title = {"STORE"} store  = {true} />
             <div style = {{display : "flex" , justifyContent : "center" , 
             margin : 12 , flexWrap : "wrap" }}>
                 {

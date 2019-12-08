@@ -7,9 +7,9 @@ import Switch from "react-switch";
 import {themeColor} from '../Constant/index'
 import 'antd/dist/antd.css';
 import { Input, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader , } from 'antd';
-import {  FaUserAlt } from "react-icons/fa";
+import {  FaUserAlt , FaHeadphones } from "react-icons/fa";
 import {GiMedicinePills } from 'react-icons/gi' 
-import {AiOutlineFile , AiOutlineProfile , FaImage } from 'react-icons/ai' 
+import {AiOutlineFile , AiOutlineProfile , FaImage  , } from 'react-icons/ai' 
 const InputGroup = Input.Group;
 
 class Home extends Component {
@@ -44,73 +44,59 @@ class Home extends Component {
                 <FaUserAlt color = {'#fff'} fontSize = {41} style = {{marginTop : 32}} />
                </Col>
               </Row>
-              
+              <div style = {{display : "flex", justifyContent : "center"}}>
+                <div>
               <Link to = {"/manageVideos"}>
-              <Row gutter={12} type="flex" justify="center" style  = {{margin  : 5 , marginTop : 26}} >
-                  <Col  md = {2}>
-                <FaYoutube color = {themeColor} fontSize = {25}  style = {{marginTop : 4}} />
-                  </Col>
-                  <Col md = {8}>
+                <div className = {'homeIcons'} >
+                <FaYoutube color = {themeColor} fontSize = {25}  style = {{width : '63px'}} />
                 <span style = {{color : themeColor , textAlign : 'center' ,
                 fontSize : 18}}>Manage Videos</span>
-                  </Col>
-              </Row>
+                </div>
                </Link> 
               <Link to = {"/manageProducts"}>
-              <Row gutter={12} type="flex" justify="center" style  = {{margin  : 5}} >
-                  <Col  md = {2}>
-                <GiMedicinePills color = {themeColor} fontSize = {25}  style = {{marginTop : 4}} />
-                  </Col>
-                  <Col md = {8}>
+              <div className = {'homeIcons'} > 
+                <GiMedicinePills color = {themeColor} fontSize = {25}  style = {{width : '63px'}} />
                 <span style = {{color : themeColor , textAlign : 'center' ,
                 fontSize : 18}}>Manage Products</span>
-                  </Col>
-              </Row>
+                </div>
                </Link> 
               <Link to = {"/manageClassified"}>
-              <Row gutter={12} type="flex" justify="center" style  = {{margin  : 5}} >
-                  <Col  md = {2}>
-                <AiOutlineFile color = {themeColor} fontSize = {25}  style = {{marginTop : 4}} />
-                  </Col>
-                  <Col md = {10}>
+              <div className = {'homeIcons'} >
+                <AiOutlineFile color = {themeColor} fontSize = {25}  style = {{width : '63px'}} />
                 <span style = {{color : themeColor , textAlign : 'center' ,
                 fontSize : 18}}>Manage Classifieds</span>
-                  </Col>
-              </Row>
+                </div>
+               </Link>
+               <Link to = {"/manageVibes"}>
+              <div className = {'homeIcons'} >
+                <FaHeadphones color = {themeColor} fontSize = {25}  style = {{width : '63px'}} />
+                <span style = {{color : themeColor , textAlign : 'center' ,
+                fontSize : 18}}>Manage Vibes</span>
+                </div>
                </Link> 
               <Link to = {"/orders"}>
-              <Row gutter={12} type="flex" justify="center" style  = {{margin  : 5}} >
-                  <Col  md = {2}>
-                <FaTruckMoving color = {themeColor} fontSize = {25}  style = {{marginTop : 4}} />
-                  </Col>
-                  <Col md = {8}>
+              <div className = {'homeIcons'} >
+                <FaTruckMoving color = {themeColor} fontSize = {25}  style = {{width : '63px'}} />
                 <span style = {{color : themeColor , textAlign : 'center' ,
                 fontSize : 18}}>Orders</span>
-                  </Col>
-              </Row>
+                </div>
                </Link> 
               <Link to = {"/notification"}>
-              <Row gutter={12} type="flex" justify="center" style  = {{margin  : 5}} >
-                  <Col  md = {2}>
-                <FaBell color = {themeColor} fontSize = {25}  style = {{marginTop : 4}} />
-                  </Col>
-                  <Col md = {8}>
+              <div className = {'homeIcons'} >
+                <FaBell color = {themeColor} fontSize = {25}  style = {{width : '63px'}} />
                 <span style = {{color : themeColor , textAlign : 'center' ,
                 fontSize : 18}}>Notifications</span>
-                  </Col>
-              </Row>
+                </div>
                </Link> 
               <Link to = {"/terms"}>
-              <Row gutter={12} type="flex" justify="center" style  = {{margin  : 5 , }} >
-                  <Col  md = {2} style = {{marginLeft : 41}}>
-                <AiOutlineProfile color = {themeColor} fontSize = {25}  style = {{marginTop : 4}} />
-                  </Col>
-                  <Col md = {10}>
+              <div className = {'homeIcons'} >
+                <AiOutlineProfile color = {themeColor} fontSize = {25}  style = {{width : '63px'}} />
                 <span style = {{color : themeColor , textAlign : 'center' ,
                 fontSize : 18}}>Terms & Conditions</span>
-                  </Col>
-              </Row>
+                </div>
                </Link> 
+                  </div>
+                </div>
                     </CenterContainer>
             </Container>
         );

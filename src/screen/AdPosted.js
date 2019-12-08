@@ -9,7 +9,7 @@ import {  IoIosClose} from "react-icons/io";
 
 
 const { TextArea } = Input;
-class RepostClssified extends Component {
+class Adposted extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -53,4 +53,4 @@ render () {
 }
 }
 
-export default RepostClssified;
+export default Adposted;

@@ -12,7 +12,7 @@ import '../App.css'
 import { Input, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader , } from 'antd';
 function Intro() {
     return (
-        <Container leftbar = {true}>
+        <Container leftbar = {true} icons = {true}>
             <div style = {{margin : 25}}>
              <span className = {'slogan'}>You Have The Power  </span>
             <span className = {'slogan'}> To Choose </span>

@@ -162,6 +162,7 @@
 }
 .videodiv{
   height : 140px;
+  width: 320px;
   background-color : lightblue;
   display : flex ;
   justify-content : center;
@@ -217,4 +218,34 @@
   align-items: center;
   height: 55px;
   padding: 6px;
+}
+.centerContainer{
+  height: 90%;
+  width: 45%;
+  margin: 2.5px auto ;
+  border: 2px solid #a7acaf ;
+  background-color: #fff;
+  padding: 12px;
+  margin-top: 25px;
+} 
+.homeIcons{
+  display : flex;
+  justify-content: flex-start;
+  align-items : center; 
+  margin-left: -12px;
+  min-height : 36px ;
+}
+.notifRow{
+height: 80px;
+display: flex;
+justify-content: space-between;
+padding-left: 10%;
+padding-right: 10%;
+align-items: center;
+border-bottom: 2px solid #2799fc;
+}
+@media screen and (max-width: 600px) {
+  .centerContainer  {
+    width: 100%;
+  }
 }

@@ -20,7 +20,7 @@ class Login extends Component {
             inputStyle : {color : themeColor }
         }
         return (
-            <Container>
+            <Container  leftbar = {true} icons = {true}>
                 <CenterContainer>
                 <InputGroup size="large" >
                     <div style = {{marginTop : 25 , marginBottom : 25}}>

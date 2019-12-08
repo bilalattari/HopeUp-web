@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaHeart, FaMailBulk, FaBell, FaYoutube, FaHome, FaRegHandshake, FaRegListAlt, FaUserAlt } from "react-icons/fa";
+import {FiYoutube} from 'react-icons/fi'
+
 import { Layout } from 'antd';
 import {Link} from 'react-router-dom'
 const { Header, Footer, Sider, Content } = Layout;
@@ -9,17 +11,16 @@ function Container(props) {
         container: {
             height: '100%'
         },
-        header: {
-            backgroundColor: '#99d0fe'
-        },
+        header: {display : "flex" , justifyContent : 'space-between' , 
+        alignItems : "center" , backgroundColor : '#99d0fe' ,},
         sidebar: {
             width: '15%', height: '100%', backgroundColor: '#2799fc', float: 'left'
         },
         sidebarIconDiv: {
-            width: '100%', height: 80, textAlign: 'center'
+            width: '100%', height: 90, textAlign: 'center'
         },
         sidebarIcons: {
-            color: '#FFFFFF', fontSize: 45,  cursor: 'pointer'
+            color: '#FFFFFF', fontSize: 55,  cursor: 'pointer'
         },
         body: {
             width: '85%', height: '100%', backgroundColor: '#f1f8ff', float: 'left'
@@ -29,26 +30,34 @@ function Container(props) {
         <Layout>
         <Layout>
         <Header style = {styles.header}>
-        <div style={{ width: '50%', height: '100%', float: 'left', textAlign: 'left' }}>
-                     <img src={require('../assets/images/hope.png')} 
+        <div >
+                <img src={require('../assets/images/hope.png')} 
                     style={{  width: 57, height: 57 }} />
                 </div>
-                <div style={{ width: '50%', height: '100%', float: 'left', textAlign: 'right'}}>
+                {
+                    !props.icons ?
+                <div  style={{ height : '100%' }}
+                >
                     <Link to = {"/favourites"}>  
-                    <FaHeart style={{ color: '#FFFFFF', fontSize: 24, alignSelf  : 'center',  cursor: 'pointer'  }} />
+                    <FaHeart style={{ color: '#FFFFFF', fontSize: 22, marginRight : 7,    cursor: 'pointer'  }} />
                     </Link>
                     <Link to = {"/checkout"}>
-                    <FaMailBulk style={{ color: '#FFFFFF', fontSize: 24, alignSelf  : 'center',  cursor: 'pointer' }} />
-                        </Link>  
-                    <FaBell style={{ color: '#FFFFFF', fontSize: 24, alignSelf  : 'center',  cursor: 'pointer' }} />
+                    <FaMailBulk style={{ color: '#FFFFFF', fontSize: 22, marginRight : 7,    cursor: 'pointer' }} />
+                    </Link>  
+                    <FaBell style={{ color: '#FFFFFF', fontSize: 22,     cursor: 'pointer' }} />
                 </div>
+                :
+                null
+                }
         </Header>
         </Layout>
         <Layout>
+            {
+                !props.leftbar ? 
           <Sider breakpoint = {'md'}  style = {{backgroundColor : 'blue'}} width = {"160"}>
-              <div>
-                    <div style={{ ...styles.sidebarIconDiv, paddingTop: 20 }}>
-                    <Link to = {"/videos"}>    <FaYoutube style={styles.sidebarIcons} /> </Link>
+              <div style = {{marginTop : '45%'}}>
+                    <div style={{ ...styles.sidebarIconDiv }}>
+                    <Link to = {"/videos"}>    <FiYoutube style={styles.sidebarIcons} /> </Link>
                      </div>
                      <div style={styles.sidebarIconDiv}>
                       <Link to = {"/store"}>   <FaRegHandshake style={styles.sidebarIcons} /> </Link>
@@ -57,13 +66,16 @@ function Container(props) {
                        <Link to = {'/classifieds'}>  <FaRegListAlt style={styles.sidebarIcons} /> </Link>
                      </div>
                      <div style={styles.sidebarIconDiv}>
-                         <FaHome style={styles.sidebarIcons} />
+                     <Link to = {'/blockwatch'}> <FaHome style={styles.sidebarIcons} /> </Link>
                      </div>
                      <div style={styles.sidebarIconDiv}>
-                         <FaUserAlt style={styles.sidebarIcons} />
+                       <Link to = {"/home"}>  <FaUserAlt style={styles.sidebarIcons} /> </Link>
                      </div>
                  </div>
           </Sider>
+          :
+          null
+            }
           <Content style={{
               background: '#eef5fc',
               minHeight: '90vh',

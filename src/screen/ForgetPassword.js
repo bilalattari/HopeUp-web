@@ -20,7 +20,7 @@ class ForgetPassword extends Component {
             inputStyle : {color : themeColor }
         }
         return (
-            <Container>
+            <Container  leftbar = {true} icons = {true}>
                 <CenterContainer>
                 <InputGroup size="large" >
                     <div style = {{marginTop : 12 , marginBottom : 12}}>

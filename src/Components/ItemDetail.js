@@ -1,20 +1,26 @@
 import React , {Component} from 'react';
-import Container from '../container';
 import 'antd/dist/antd.css';
-import Button from '../Components/Buttons'
-import { Input, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader , Checkbox } from 'antd';
-import { themeColor } from '../Constant';
-import {  FaUserAlt   ,FaShoppingBag , FaImage , FaCcVisa} from "react-icons/fa";
+import {  Col, Row} from 'antd';
+import {  FaShoppingBag , FaImage} from "react-icons/fa";
+import {FiPlayCircle} from "react-icons/fi"
 
 function ItemDetail(props) {
     return (
         <Row  className = {'mainContainerManage'} 
         gutter = {24} type = {"flex"} justify = {props.center ? "center" : "start"} style = {{width   :"100%" , border : "0px"}}  >
         <Col md = {5}>
-        <Row gutter={12} type="flex" justify="center" >
-        <Col span={10} style = {{height : 130 , width : 180 , backgroundColor : 'skyblue' , 
-         marginBottom : 6}} type="flex" justify="center" align = "center">
-        <FaShoppingBag color = {'#fff'} fontSize = {41} style = {{marginTop : 32}} />
+        <Row gutter={12} type="flex" justify="center" align = "middle" >
+        <Col span={10} style = {{height : 130 , width : 180 , backgroundColor : 'skyblue' ,
+         display : "flex" , justifyContent : "center" , alignItems : "center"}} 
+        type="flex" justify="center" >
+             {
+                 props.classified ? 
+                 <FaImage color = {'#fff'} fontSize = {41} />
+                 : props.video ? 
+                 <FiPlayCircle color = {'#fff'} fontSize = {41} />
+                 :
+                 <FaShoppingBag color = {'#fff'} fontSize = {41} />
+             }
        </Col>
       </Row>
         </Col>

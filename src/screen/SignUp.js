@@ -26,7 +26,7 @@ class SignUp extends Component {
             inputStyle : {color : themeColor }
         }
         return (
-            <Container>
+            <Container leftbar = {true} icons = {true}>
                 <CenterContainer>
                 <InputGroup size="large" >
                 <Row gutter={12} type="flex" justify="center">

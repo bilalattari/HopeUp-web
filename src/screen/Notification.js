@@ -8,7 +8,7 @@ import Switch from "react-switch";
 class Notification extends Component {
     constructor(props){
         super(props)
-        this.state = { checked: false , notification : false };
+        this.state = { checked: true , notification : false };
         this.handleChange = this.handleChange.bind(this);
     
     }
@@ -22,25 +22,25 @@ class Notification extends Component {
                     <div style={{ marginTop: 40, fontSize: 24, fontWeight: 'bold', width: '100%', textAlign: 'center', color: '#2799fc' }}>
                         Notification
                     </div>
-                    <div style={{ marginTop: 70, width: '100%', textAlign: 'center' }}>
-                        <div style={{ width: '100%', height: 40, marginTop: 30, marginBottom: 20, borderBottom: '2px solid #2799fc' }}>
-                            <div style={{ width: '35%', textAlign: 'start', paddingLeft: '15%', float: 'left', color: '#2799fc' }}>BOUND</div>
-                            <div style={{ width: '30%', textAlign: 'right', paddingRight: '20%', float: 'left' }}>
-                                <FaVolumeOff style={{ color: '#2799fc', fontSize: 22, paddingRight: 10, cursor: 'pointer'  }} />
-                                <FaVolumeMute style={{ color: '#2799fc', fontSize: 22, paddingRight: 10, cursor: 'pointer' }} />
-                                <FaMobileAlt style={{ color: '#2799fc', fontSize: 22, paddingRight: 10, cursor: 'pointer' }} />
+                    <div style={{ marginTop: 30, width: '100%', textAlign: 'center' }}>
+                        <div className = {'notifRow'} >
+                            <div className = {'title'} style = {{ fontSize : 14}}>SOUND</div>
+                            <div >
+                                <FaVolumeOff style={{ color: '#2799fc', fontSize: 22, marginRight : 7,    cursor: 'pointer'  }} />
+                                <FaVolumeMute style={{ color: '#2799fc', fontSize: 22, marginRight : 7,    cursor: 'pointer'  }} />
+                                <FaMobileAlt style={{ color: '#2799fc', fontSize: 22, marginRight : 7,    cursor: 'pointer'  }} />
                             </div>
                         </div>
-                        <div style={{ width: '100%', height: 40, marginTop: 30, marginBottom: 20, borderBottom: '2px solid #2799fc' }}>
-                            <div style={{ width: '35%', textAlign: 'start', paddingLeft: '15%', float: 'left', color: '#2799fc' }}>PUSH NOTIFICATION</div>
-                            <div style={{ width: '30%', textAlign: 'right', paddingRight: '20%', float: 'left' }}>
+                        <div className = {'notifRow'} >
+                        <div className = {'title'} style = {{ fontSize : 14}}>PUSH NOTIFICATION</div>
+                            <div >
                             <Switch onChange={this.handleChange} checked={this.state.checked} uncheckedIcon = {false} checkedIcon = {false} onColor = {'#2799fc'} />
                             </div>
                         </div>
-                        <div style={{ width: '100%', height: 40, marginTop: 30, marginBottom: 20, borderBottom: '2px solid #2799fc' }}>
-                            <div style={{ width: '35%', textAlign: 'start', paddingLeft: '15%', float: 'left', color: '#2799fc' }}>EMAIL NOTIFICATION</div>
-                            <div style={{ width: '30%', textAlign: 'right', paddingRight: '20%', float: 'left' }}>
-                            <Switch onChange={()=> this.setState({notification : !this.state.notification})} checked={this.state.notification} uncheckedIcon = {false} checkedIcon = {false} onColor = {'#2799fc'} />
+                        <div className = {'notifRow'} >
+                        <div className = {'title'} style = {{ fontSize : 14}}>EMAIL NOTIFICATION</div>
+                            <div >
+                            <Switch onChange={this.handleChange} checked={this.state.checked} uncheckedIcon = {false} checkedIcon = {false} onColor = {'#2799fc'} />
                             </div>
                         </div>
                     </div>

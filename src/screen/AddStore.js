@@ -20,8 +20,8 @@ function AddStore() {
             <div style = {{display : "flex" , justifyContent : "center" ,}}>
                 </div>
                 <div style = {{padding : 15 , backgroundColor : "#fff"}}>
-                    <span style = {{fontSize : 22}} className = {"slogan"}>BECOME A SELLER</span>
-                    <span style = {{fontSize : 22}} className = {"slogan"}>ON HOPEUP</span>
+                    <span style = {{fontSize : 22}} className = {"slogan"}>Sell on</span>
+                    <span style = {{fontSize : 22}} className = {"slogan"}>Hope Up</span>
                     </div>
 
                 <Row gutter = {24} type = {'flex'} justify = 'center'   >

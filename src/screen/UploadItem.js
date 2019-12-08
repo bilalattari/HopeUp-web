@@ -21,10 +21,8 @@ function UploadItem() {
             <div style = {{display : "flex" , justifyContent : "center" ,  flexWrap : "wrap" }}>
                 </div>
                 <div style = {{padding : 15 , backgroundColor : "#fff"}}>
-                    <span style = {{fontSize : 22}} className = {"slogan"}>Uploaded videos should upbuild,</span>
-                    <span style = {{fontSize : 22}} className = {"slogan"}>inspire and breed hope</span>
+                    <span style = {{fontSize : 22}} className = {"slogan"}>Uploade Video</span>
                     </div>
-
                 <Row gutter = {24} type = {'flex'} justify = 'center'  style = {{margin : 8 }} >
                  <Col lg = {12} style = {{ height : '80vh' , padding : 12}}>
                  <div className = {"videodiv"} style = {{width : '80%' , height : '45%'}}>

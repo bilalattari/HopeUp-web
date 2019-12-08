@@ -19,7 +19,7 @@ function CreateAdd() {
             <div style = {{display : "flex" , justifyContent : "center" ,  flexWrap : "wrap" }}>
                 </div>
                 <div style = {{padding : 15 , backgroundColor : "#fff"}}>
-                    <span style = {{fontSize : 22}} className = {"slogan"}>CREATE</span>
+                    <span style = {{fontSize : 22}} className = {"slogan"}>POST</span>
                     <span style = {{fontSize : 22}} className = {"slogan"}>CLASSIFIED ADS</span>
                     </div>
 
